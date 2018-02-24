@@ -1,6 +1,6 @@
 # HW 2
 ## Part 0 - Setup
-Clone this repository into a directory that makes sense (probably your CodeBase folder). Create a new branch just called your first name. Do all of your work on this branch.
+Clone this repository into a directory that makes sense (probably your CodeBase folder). Create a new branch with the name being your first name (i.e. my branch would just be "Brian")
 ## Part 1 - Tic Tac Toe (JavaScript)
 Seeing that you already did the hard part, I provided plenty of starter code. I've given you all of the variables, a function to check if someone won, and a function to switch players. You are free to delete all of this and start from scratch if you don't feel like reading through starter code. If you do want to read through the starter, here is what you need to do:
 
