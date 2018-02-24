@@ -1,0 +1,26 @@
+body {
+	font-family: calibri;
+}
+
+table {
+	border-collapse: collapse;
+	border-style: hidden;
+}
+table td {
+	border: 3px solid black;
+	width: 100px;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+}
+
+#message {
+	font-size: 1.3em;
+}
+
+.endgame {
+	font-size: 1.8em !important;
+	color: blue;
+}
+
+
