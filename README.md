@@ -1,6 +1,6 @@
 # HW 2
 ## Part 0 - Setup
-Clone this repository into a directory that makes sense (probably your CodeBase folder).
+Clone this repository into a directory that makes sense (probably your CodeBase folder). Create a new branch just called your first name. Do all of your work on this branch.
 ## Part 1 - Tic Tac Toe (JavaScript)
 Seeing that you already did the hard part, I provided plenty of starter code. I've given you all of the variables, a function to check if someone won, and a function to switch players. You are free to delete all of this and start from scratch if you don't feel like reading through starter code. If you do want to read through the starter, here is what you need to do:
 
@@ -14,3 +14,6 @@ When you're done, your game should function like mine: <https://bdeleonardis1.gi
 
 ## Part 2 - Google (CSS)
 Now you know enough to make Google! The home page that is...I gave you some starter HTML code, again feel free to delete it if you want. Please do not just google how to do this directly or use the inspector to steal google's, you will not get anything out of this assignment. I only included some of the elements from the homepage in the starter HTML (the required ones), but feel free to add the others as per: <http://google.com>. There is also a starter picture of what Google looked like when I was making this.
+
+## Part 3 - Submission
+Push your branch to github (in this repository). Do not push to master!!
