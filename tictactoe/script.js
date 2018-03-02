@@ -21,7 +21,10 @@ addMessage("Player " + player + " it is your turn!", "standard");
 // -----------------------------------------------------------------
 
 // TODO: add the setSpot function to be the event to each "spot"
-
+var spots = document.getElementsByClassName("spot");
+for(var i = 0; i < spots.length; i++) {
+	spots[i].addEventListener("click", setSpot);
+}
 
 // -----------------------------------------------------------------
 // DOM Interaction
@@ -32,13 +35,17 @@ addMessage("Player " + player + " it is your turn!", "standard");
    HTML board */
 function setSpot() {
 	// TODO: assign id to be the id of the element that got selected
+	var id = this.id;
 	var row = getRow(id);
 	var col = getCol(id);
+	var spot = document.getElementById(id);
+	console.log(spot);
 
 	if (board[row][col] === '-') {
-		board[row][col] = player;
+		 board[row][col] = player;
 		// TODO: add the player to the HTML board too (this is not the same as the 2D array)
 		
+
 		validInput = true;
 		moves += 1;
 		player = switchPlayer();
@@ -58,6 +65,9 @@ function setSpot() {
 
 function addMessage(message, c) {
 	// change the message and assign the class c to the message paragraph
+	var e = document.getElementById("message");
+	e.innerHTML = message;
+	e.className = c;
 }
 
 
