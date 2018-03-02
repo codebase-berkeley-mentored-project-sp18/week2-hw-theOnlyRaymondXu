@@ -10,18 +10,19 @@ of all elements in the DOM tree that contain that class in their classname.
 You can test your function by opening index.html in your browser and viewing the console output.
 */
 
-function getElementsByClassName(strClassName) {
+function getElementsByClassName(strClassName) { // only thing failing is className = index
   //=====================
   // YOUR CODE HERE
   //=====================
   var root = document.body;
   var arr = [];
   var helper = function(element){
-  	if (element.className == strClassName) {
+  	if (element.classList != null && strClassName === element.classList[0]) {
   		arr.push(element);
   	}
   	element.childNodes.forEach(helper);
   }
+  helper(root);
   return arr;
 }
 
