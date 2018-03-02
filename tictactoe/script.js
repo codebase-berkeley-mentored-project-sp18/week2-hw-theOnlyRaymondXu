@@ -39,12 +39,11 @@ function setSpot() {
 	var row = getRow(id);
 	var col = getCol(id);
 	var spot = document.getElementById(id);
-	console.log(spot);
 
 	if (board[row][col] === '-') {
 		 board[row][col] = player;
 		// TODO: add the player to the HTML board too (this is not the same as the 2D array)
-		
+		spot.innerHTML = player;
 
 		validInput = true;
 		moves += 1;
@@ -57,6 +56,9 @@ function setSpot() {
 		if (winner) {
 			addMessage("Congratulations, " + switchPlayer() + " you won!", "endgame");
 			// TODO: remove the event listener from every spot
+			for(var i = 0; i < spots.length; i++) {
+				spots[i].removeEventListener("click", setSpot);
+			}
 		} else if (moves === 9) {
 			addMessage("You both suck, it's a tie!", "endgame");
 		}
@@ -113,10 +115,12 @@ function isWinner() {
 
 function getRow(id) {
 	// TODO: given the id (a string, return the row)
+	return Math.floor(parseInt(id) / 10);
 }
 
 function getCol(id) {
 	// TODO: given the id (a string, return the col)
+	return parseInt(id) % 10;
 }
 
 
