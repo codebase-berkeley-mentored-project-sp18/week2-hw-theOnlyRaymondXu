@@ -14,7 +14,15 @@ function getElementsByClassName(strClassName) {
   //=====================
   // YOUR CODE HERE
   //=====================
-  return;
+  var root = document.body;
+  var arr = [];
+  var helper = function(element){
+  	if (element.className == strClassName) {
+  		arr.push(element);
+  	}
+  	element.childNodes.forEach(helper);
+  }
+  return arr;
 }
 
 
