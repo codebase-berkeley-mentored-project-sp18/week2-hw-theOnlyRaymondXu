@@ -1,0 +1,71 @@
+input {
+	
+  	padding: 1em 2em;
+  	height: 40px;
+  	width: 160px;
+  	border-radius: 3px;
+  	font-size: 15;
+}
+
+.button {
+	display: inline-block;
+}
+
+
+div {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 40%;
+}
+
+#nav_bar {
+	
+	
+}
+
+.nav-links {
+	display: inline;
+	float: right;
+	padding: 5px;
+}
+
+#form-search {
+	box-shadow: 4px 5px #888888;
+	width: 80%;
+	height: 4%;
+}
+
+.form {
+
+}
+
+.footer-left {
+	float: left;
+}
+
+ul {
+  overflow: hidden;
+  list-style-type: none;
+}
+
+ul li {
+	padding: 5px;
+  float: left;
+}
+
+.footer-right {
+	float: right;
+}
+
+footer {
+
+	background-color: #e3e3e3;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
